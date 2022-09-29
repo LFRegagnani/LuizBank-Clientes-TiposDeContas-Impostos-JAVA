@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="393611bd-e573-441c-b117-c39b6876c8b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LuizBank-herdado.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ContaCorrente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ContaPoupanca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="393611bd-e573-441c-b117-c39b6876c8b9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,13 +26,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Luiz_/IdeaProjects/LuizBank-herdado"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Luiz_/IdeaProjects/LuizBank-herdado&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Luiz_\IdeaProjects\LuizBank-herdado\src" />
@@ -73,6 +61,18 @@
       <option name="presentableId" value="Default" />
       <updated>1664402437847</updated>
     </task>
+    <task id="LOCAL-00001" summary="Banco com classe cliente e dois tipos de classe conta. Na conta corrente o cliente paga uma taxa de 20 centavos a cada saque ou transferencia de credito mas começa com $ 100 de limite de credito, na poupança não tem taxa mas também não tem credito inicial.">
+      <created>1664452251818</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664452251818</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Banco com classe cliente e dois tipos de classe conta. Na conta corrente o cliente paga uma taxa de 20 centavos a cada saque ou transferencia de credito mas começa com $ 100 de limite de credito, na poupança não tem taxa mas também não tem credito inicial." />
+    <option name="LAST_COMMIT_MESSAGE" value="Banco com classe cliente e dois tipos de classe conta. Na conta corrente o cliente paga uma taxa de 20 centavos a cada saque ou transferencia de credito mas começa com $ 100 de limite de credito, na poupança não tem taxa mas também não tem credito inicial." />
   </component>
 </project>
