@@ -1,4 +1,4 @@
-public class Main {
+public class MainTeste {
     public static void main(String[] args) {
 
         ContaCorrente ccTeste = new ContaCorrente(1,1);

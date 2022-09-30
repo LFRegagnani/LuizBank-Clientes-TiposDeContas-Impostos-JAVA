@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="393611bd-e573-441c-b117-c39b6876c8b9" name="Changes" comment="" />
+    <list default="true" id="393611bd-e573-441c-b117-c39b6876c8b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CalculadorDeImposto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SeguroDeVida.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestaImpostos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tributavel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTeste.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,7 +41,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Luiz_/IdeaProjects/LuizBank"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Luiz_/IdeaProjects/LuizBank-herdado"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -44,9 +56,23 @@
       <recent name="C:\Users\Luiz_\IdeaProjects\LuizBank-herdado\src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.TestaImpostos">
+    <configuration name="MainTeste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainTeste" />
+      <module name="LuizBank-herdado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaCalculadorDeImpostoESeguro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestaCalculadorDeImpostoESeguro" />
+      <module name="LuizBank-herdado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaImpostos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestaImpostos" />
       <module name="LuizBank-herdado" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -54,7 +80,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TestaImpostos" />
+        <item itemvalue="Application.TestaCalculadorDeImpostoESeguro" />
+        <item itemvalue="Application.MainTeste" />
       </list>
     </recent_temporary>
   </component>
@@ -81,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664453108344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Banco com classe cliente e dois tipos de classe conta. Na conta corrente o cliente paga uma taxa de 20 centavos a cada saque ou transferencia de credito mas começa com $ 100 de limite de credito, na poupança não tem taxa mas também não tem credito inicial.">
+      <created>1664455343584</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664455343584</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -4,11 +4,17 @@ public class Cliente {
     private String cpf;
     private String profissao;
     private static int totalClientes;
+    private Conta conta;
 
-    Cliente(String nome,String cpf,String profissao){//isso é o construtor, existe para mostrar o que é necessario para implementar a classe
+
+
+
+    Cliente(String nome,String cpf,String profissao,Conta conta){//isso é o construtor, existe para mostrar o que é necessario para implementar a classe
         setNome(nome);
         setCpf(cpf);
         setProfissao(profissao);
+        setConta(conta);
+        conta.setTitular(this);
         Cliente.totalClientes++;
         System.out.println("Um(a) novo(a) cliente foi cadastrado com o nome de "
                 + this.nome + " agora o número total de clientes é " + Cliente.totalClientes);
@@ -36,5 +42,7 @@ public class Cliente {
         this.profissao = profissao;
     }
 
+    public void setConta(Conta conta){this.conta=conta;}
+    public Conta getConta(){return this.conta;}
 
 }
