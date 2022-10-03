@@ -1,3 +1,10 @@
+package br.com.Banco.modelo;
+
+
+/** esta classe representa um cliente do banco
+ * @author Luiz_
+ */
+
 public class Cliente {
 
     private String nome;
@@ -9,7 +16,7 @@ public class Cliente {
 
 
 
-    Cliente(String nome,String cpf,String profissao,Conta conta){//isso é o construtor, existe para mostrar o que é necessario para implementar a classe
+    public Cliente(String nome, String cpf, String profissao, Conta conta){//isso é o construtor, existe para mostrar o que é necessario para implementar a classe
         setNome(nome);
         setCpf(cpf);
         setProfissao(profissao);
@@ -20,6 +27,10 @@ public class Cliente {
                 + this.nome + " agora o número total de clientes é " + Cliente.totalClientes);
     }
 
+    @Override
+    public String toString() {
+        return "Cliente "+ this.nome + " CPF " + this.cpf;
+    }
 
     public String getNome(){//mostra o nome em forma de string
         return this.nome;

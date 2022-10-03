@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LuizBank-herdado:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/LuizBank_herdado_jar</output-path>
+    <root id="archive" name="LuizBank-herdado.jar">
+      <element id="module-output" name="LuizBank-herdado" />
+    </root>
+  </artifact>
+</component>

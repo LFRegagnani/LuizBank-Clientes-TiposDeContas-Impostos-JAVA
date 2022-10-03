@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="LuizBank-herdado:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="393611bd-e573-441c-b117-c39b6876c8b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CalculadorDeImposto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SeguroDeVida.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestaImpostos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tributavel.java" afterDir="false" />
+    <list default="true" id="393611bd-e573-441c-b117-c39b6876c8b9" name="Changes" comment="atualizado para conter uma exception caso o cliente tente sacar dinheiro que não tem. Também fiz um try Catch para testar.">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/LuizBank_herdado_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/Banco/Testes/TestaErroDeSaldo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/Banco/Testes/TesteString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/ContaEspecial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/SaldoInsuficiente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ContaCorrente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CalculadorDeImposto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/CalculadorDeImposto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ContaPoupanca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/ContaPoupanca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/Testes/MainTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SeguroDeVida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/SeguroDeVida.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestaImpostos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/Testes/TestaImpostos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tributavel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/Banco/modelo/Tributavel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +54,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Luiz_/IdeaProjects/LuizBank-herdado"
+    "last_opened_file_path": "C:/Users/Luiz_/IdeaProjects/LuizBank-herdado",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -55,15 +71,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Luiz_\IdeaProjects\LuizBank-herdado\src" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com" />
+      <recent name="LuizBank" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.TestaImpostos">
-    <configuration name="MainTeste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MainTeste" />
-      <module name="LuizBank-herdado" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TesteString">
     <configuration name="TestaCalculadorDeImpostoESeguro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestaCalculadorDeImpostoESeguro" />
       <module name="LuizBank-herdado" />
@@ -71,18 +84,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaImpostos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestaImpostos" />
+    <configuration name="TestaErroDeSaldo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Banco.Testes.TestaErroDeSaldo" />
       <module name="LuizBank-herdado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaImpostos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Banco.Testes.TestaImpostos" />
+      <module name="LuizBank-herdado" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.Banco.Testes.TesteString" />
+      <module name="LuizBank-herdado" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.Banco.Testes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="br.com.Banco.Testes.TestaImpostos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.Banco.Testes.TestaImpostos" />
+      <module name="LuizBank-herdado" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.Banco.Testes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TesteString" />
+        <item itemvalue="Application.br.com.Banco.Testes.TestaImpostos" />
+        <item itemvalue="Application.TestaErroDeSaldo" />
         <item itemvalue="Application.TestaImpostos" />
         <item itemvalue="Application.TestaCalculadorDeImpostoESeguro" />
-        <item itemvalue="Application.MainTeste" />
       </list>
     </recent_temporary>
   </component>
@@ -116,11 +164,20 @@
       <option name="project" value="LOCAL" />
       <updated>1664455343584</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Banco com classe cliente e dois tipos de classe conta. Na conta corrente o cliente paga uma taxa de 20 centavos a cada saque ou transferencia de credito mas começa com $ 100 de limite de credito, na poupança não tem taxa mas também não tem credito inicial. adicionado fundamentos iniciais de uma ferramenta automatica de cobrança de impostos sobre a conta corrente e sobre o seguro de vida. Tambem foi incluida a interface &quot;tributavel&quot; que obriga a CC e o seguro de vida a implementarem o metodo que recolhe os impostos">
+      <created>1664543857891</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664543857891</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Banco com classe cliente e dois tipos de classe conta. Na conta corrente o cliente paga uma taxa de 20 centavos a cada saque ou transferencia de credito mas começa com $ 100 de limite de credito, na poupança não tem taxa mas também não tem credito inicial." />
-    <option name="LAST_COMMIT_MESSAGE" value="Banco com classe cliente e dois tipos de classe conta. Na conta corrente o cliente paga uma taxa de 20 centavos a cada saque ou transferencia de credito mas começa com $ 100 de limite de credito, na poupança não tem taxa mas também não tem credito inicial." />
+    <MESSAGE value="Banco com classe cliente e dois tipos de classe conta. Na conta corrente o cliente paga uma taxa de 20 centavos a cada saque ou transferencia de credito mas começa com $ 100 de limite de credito, na poupança não tem taxa mas também não tem credito inicial. adicionado fundamentos iniciais de uma ferramenta automatica de cobrança de impostos sobre a conta corrente e sobre o seguro de vida. Tambem foi incluida a interface &quot;tributavel&quot; que obriga a CC e o seguro de vida a implementarem o metodo que recolhe os impostos" />
+    <MESSAGE value="atualizado para conter uma exception caso o cliente tente sacar dinheiro que não tem. Também fiz um try Catch para testar." />
+    <option name="LAST_COMMIT_MESSAGE" value="atualizado para conter uma exception caso o cliente tente sacar dinheiro que não tem. Também fiz um try Catch para testar." />
   </component>
 </project>

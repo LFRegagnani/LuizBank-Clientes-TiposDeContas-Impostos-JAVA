@@ -1,3 +1,5 @@
+package br.com.Banco.modelo;
+
 public abstract class Conta {
     //dados da conta
     protected double saldo;
@@ -10,20 +12,20 @@ public abstract class Conta {
     protected static int totalDeContas;
 
 
-    Conta(int agencia, int numeroConta) {//construtor, existe para definir o padrão da classe quando implementada
+    Conta( int numeroConta,int agencia) {//construtor, existe para definir o padrão da classe quando implementada
         setAgencia(agencia);
         setNumeroConta(numeroConta);
         Conta.totalDeContas++;
-        informa();
+
 
 
     }
 
-    protected void informa(){
-        System.out.println("A conta número " + this.numeroConta +
-                " da agencia " + this.agencia + " foi criada com sucesso!" +
-                " Agora o total de contas criadas é " + Conta.totalDeContas);
-    }
+//    protected void informa(){
+//        System.out.println("A conta número " + this.numeroConta +
+//                " da agencia " + this.agencia + " foi criada com sucesso!" +
+//                " Agora o total de contas criadas é " + Conta.totalDeContas);
+//    }
 
     //metodo usado para depositar valores em saldo
     public void deposita(double valor) {
@@ -36,8 +38,9 @@ public abstract class Conta {
     }
 
 
-    public boolean saca(double valor) {//metodo de sacar valores de saldo ou de limite se n tiver saldo
+    public void saca(double valor) {//metodo de sacar valores de saldo ou de limite se n tiver saldo
         //esta sequencia de if faz com que o cliente use o limite se o saldo seja insuficiente
+
         if (this.total >= valor) {
             if (this.saldo >= valor) {//aqui é quando ele tem saldo suficiente
                 this.saldo -= valor;
@@ -47,13 +50,17 @@ public abstract class Conta {
                 this.limiteDaConta += this.saldo;
                 this.total = this.limiteDaConta;
             }
-            return true;
 
         } else {
-            this.total = this.saldo + this.limiteDaConta;
-            System.out.println("Você não pode sacar este valor, sua conta tem R$ " + this.saldo +
-                    " e o seu limite atual é R$ " + this.limiteDaConta);
-            return false;
+            try {
+                throw new SaldoInsuficiente("Você não pode sacar este valor, sua conta tem R$ " + this.saldo +
+                        " e o seu limite atual é R$ " + this.limiteDaConta);
+            }catch (Exception insuficiente){
+                System.out.println("Deposite algum dinheiro antes de de realizar esta operação");
+                insuficiente.printStackTrace();
+            }
+
+
         }
     }
 
@@ -83,7 +90,10 @@ public abstract class Conta {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "Conta número " + getNumeroConta() + " Agencia número "+ getAgencia();
+    }
 
     //GETTs e SETTs
     public double getSaldo() { // metodo que mostra o saldo do cliente já que o saldo é privado
@@ -102,6 +112,7 @@ public abstract class Conta {
 
         this.numeroConta = numero;
     }
+
 
     public int getAgencia() {// mostra o numero da agencia como uma int
         return this.agencia;

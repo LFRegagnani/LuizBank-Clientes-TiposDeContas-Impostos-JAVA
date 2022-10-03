@@ -1,3 +1,5 @@
+package br.com.Banco.modelo;
+
 public class CalculadorDeImposto {
 
     private double totalImposto;

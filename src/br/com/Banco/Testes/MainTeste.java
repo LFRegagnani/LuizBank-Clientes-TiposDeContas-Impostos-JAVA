@@ -1,3 +1,8 @@
+package br.com.Banco.Testes;
+
+import br.com.Banco.modelo.ContaCorrente;
+import br.com.Banco.modelo.ContaPoupanca;
+
 public class MainTeste {
     public static void main(String[] args) {
 
