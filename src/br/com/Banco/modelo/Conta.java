@@ -1,6 +1,6 @@
 package br.com.Banco.modelo;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
     //dados da conta
     protected double saldo;
     protected int agencia;

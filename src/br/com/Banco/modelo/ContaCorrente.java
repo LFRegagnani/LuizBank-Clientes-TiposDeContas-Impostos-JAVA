@@ -6,7 +6,7 @@ public class ContaCorrente extends Conta implements Tributavel{
 
 
     public ContaCorrente( int numeroConta,int agencia) {
-        super(agencia, numeroConta);
+        super(numeroConta, agencia);
 
     }
 
@@ -45,4 +45,11 @@ public class ContaCorrente extends Conta implements Tributavel{
     public String toString() {
         return  "Conta Corrente número " + getNumeroConta() + " Agencia número "+ getAgencia();
     }
+
+    @Override
+    public int compareTo(Conta outra) {
+        return (int) (this.getSaldo() - outra.getSaldo());
+
+    }
+
 }

@@ -9,7 +9,7 @@ public class ContaEspecial extends Conta implements Tributavel{
 
 
     public ContaEspecial( int numeroConta,int agencia) {
-        super(agencia, numeroConta);
+        super(numeroConta, agencia);
 
     }
 
@@ -26,5 +26,11 @@ public class ContaEspecial extends Conta implements Tributavel{
     @Override
     public String toString() {
         return "Conta Especial número " + getNumeroConta() + " Agencia número "+ getAgencia();
+    }
+
+    @Override
+    public int compareTo(Conta outra) {
+        return (int) (this.getSaldo() - outra.getSaldo());
+
     }
 }
